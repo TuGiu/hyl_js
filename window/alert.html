@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+        function disp_alert()
+        {
+            alert("You are wrong!!" + '\n' + "Please again")
+        }
+        //警告框经常用于确保用户可以得到某些信息
+        //当警告框出现后，用户需要点击确定按钮才能继续进行操作
+
+
+        function Yes_alert()
+        {
+            var y = confirm("You pressed is real,sure?"); //confirm 确认
+            if (y == true)
+            {
+                alert("Yor pressed is OK!");
+            }
+            else
+            {
+                alert("Yor pressed Cancel!");
+            }
+        }
+        //确认框用于使用户可以验证或者接受某些信息
+        //当确认框出现后，用户需要点击确定或者取消按钮才能继续进行操作
+
+
+        function why_alert()
+        {
+            var name = prompt("Please input your name: ", "")
+            if (name != null && name != "")
+            {
+                document.write("Wellcom!" + name + ", How do you fealing to day?")
+            }
+            else
+            {
+                document.write("Please input you real name." + '\n' + "Thank you~")
+            }
+        }
+        //提示框经常用于提示用户在进入页面前输入某个值
+        //当提示框出现后，用户需要输入某个值，然后点击确认或取消按钮才能继续操纵
+        //如果用户点击确认，那么返回值为输入的值。如果用户点击取消，那么返回值为 null
+        </script>
+        
+    </head>
+    <body>
+        <input type = "button" onclick = "disp_alert()" value = "Are you sure?"/>
+
+        <input type = "button" onclick = "Yes_alert()" value = "Look your pressed is real?"/>
+
+        <input type = "button" onclick = "why_alert()" value = "Input your name"/>
+    </body>
+</html>

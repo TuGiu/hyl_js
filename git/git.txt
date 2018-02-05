@@ -1,0 +1,33 @@
+Git 配置
+
+$ git config --global user.name "Scott Chacon"
+$ git config --global user.email "schacon@gmail.com"
+
+$ cat ~/.gitconfig
+
+
+
+
+
+1.Clone一个仓库
+
+$ git clone https://github.com/shiyanlou/gitproject
+$ cd gitproject/
+
+
+
+2.初始化一个新的仓库
+
+$ cd /home/shiyanlou/
+$ mkdir project             //新建文件夹
+创建代码目录project
+
+$ cd project
+$ git init
+创建并初始化Git仓库
+ls -la
+
+
+
+
+

@@ -1,0 +1,586 @@
+1.文本字体--font-family h1 {
+    font-family: Garamond;
+}
+
+
+/*所有HTML元素的默认字体是Times New Roman*/
+
+
+/*当字体的名称由多个单词组成时，最好将字体名称括起来*/
+
+h1 {
+    font-family: "Courier New";
+}
+
+2.字体大小--font-size p {
+    font-size: 18px;
+}
+
+3.字体粗细--font-weight p {
+    font-weight: bold;
+}
+
+
+/*bold粗体*/
+
+
+/*normal正常*/
+
+
+/*如果需要某段文本显示正常，
+我们可以将该特定元素的字体重量设置为normal，
+基本上关闭该元素的粗体。*/
+
+4.文本对齐--text-align text-align: left\center\right 5.颜色 文本颜色--color 背景颜色---background-color 6.透明度---opacity 0-1-->0--100% .overlay {
+    opacity: 0.5;
+}
+
+
+/*不透明度可用于使元素褪色到其他物体以获得良好的叠加效果*/
+
+7.背景图--background-image .main-banner {
+    background-image: url("https://www.example.com/image.jpg");
+}
+
+
+/*url可以成为你的项目中的文件，也可以是外部网站的链接。*/
+
+
+/*要链接到现有项目中的图像，必须提供相对文件路径*/
+
+.main-banner {
+    background-image: url("images/mountains.jpg");
+}
+
+总结：
+/*CSS声明被结构化为属性和值对。*/
+
+
+/*该font-family属性定义一个元素的字体。*/
+
+
+/*font-size 控制显示文字的大小。*/
+
+
+/*font-weight 定义文本的粗细或粗体。*/
+
+
+/*该text-align属性将文本放在其父容器的左，右或中央。*/
+
+
+/*文本可以有两种不同的颜色属性：color和background-color。
+color定义文本的颜色，同时background-color定义文本背后的颜色。*/
+
+
+/*CSS可以使opacity属性使元素透明。*/
+
+
+/*CSS还可以使用background-image属性将元素的背景设置为图像。*/
+
+盒子模型 https: //s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/diagram-boxmodel.svg
+
+/*宽度和高度 - 指定内容区域的宽度和高度。*/
+
+
+/*填充 - 指定内容区域和边框之间的空间量。*/
+
+
+/*边框 - 指定围绕内容区域和填充的边框的厚度和样式。*/
+
+
+/*边距 - 指定边框与元素外边缘之间的空间量。*/
+
+p {
+    height: 80px;
+    width: 240px;
+}
+
+1.边框--border 特定的设置width,
+style,
+color p {
+    border: 3px solid coral;
+}
+
+width: thin(薄），medium（中等）,
+thick（厚） style：none（正常），dotted（虚线），solid（实线） #banner .content h1 {
+    border: 3px solid white;
+}
+
+h2 {
+    border: 1px dotted red;
+}
+
+2.边界半径--边框不一定是正方形
+/*使用border-radius属性修改元素边框*/
+
+div.container {
+    border: 3px solid rgb(22, 77, 100);
+    border-radius: 5px;
+}
+
+
+/*将边框的所有四个角设置为5像素的半径*/
+
+
+/*通过将半径设置为与框的高度相等的方式
+创建一个完美圆形的边框100%*/
+
+div.container {
+    height: 60px;
+    width: 60px;
+    border: 3px solid rgb(22, 77, 100);
+    border-radius: 100%;
+}
+
+
+/*创建了一个完美圆形的div。*/
+
+3.填补--padding
+/*边框中的内部内容填补变大或变小*/
+
+
+/*内容变大--盒子就变大--框与框内容间隔就变大*/
+
+p.content-header {
+    border: 3px solid coral;
+    padding: 10px;
+}
+
+
+/*内容和边框之间放置10个像素的空格*/
+
+
+/*通常用于扩展背景颜色*/
+
+
+/*可以使用以下属性：*/
+
+padding-top padding-right padding-bottom padding-left
+/*每个属性仅影响盒子内容的一侧的填充*/
+
+p.content-header {
+    border: 3px solid fuschia;
+    padding-bottom: 10px;
+}
+
+
+/*只有段落内容的底部将有padding10个像素。*/
+
+
+/*padding: 20px 30px 20px 30px;*/
+
+
+/*每一侧应该有多少填充*/
+
+p.content-header {
+    border: 3px solid grey;
+    padding: 6px 11px 4px 9px;
+}
+
+
+/*于顺时针旋转中的填充量：上 右 下 左*/
+
+
+/*如果填充的顶部和底部值彼此相等，*/
+
+
+/*并且填充的左侧和右侧值也将彼此相等，*/
+
+
+/*则可以使用快捷方式：*/
+
+p.content-header {
+    padding: 5px 10px;
+}
+
+
+/*5px设置内容的顶部和底部的*/
+
+
+/*10px设置内容的左侧和右侧的*/
+
+4.边际--margin--箱子外面的空间 p {
+    border: 1px solid aquamarine;
+    margin: 20px;
+}
+
+
+/*意味着页面上的其他HTML元素不能超出段落边框的20个像素。*/
+
+margin-top margin-right margin-bottom margin-left p {
+    border: 3px solid DarkSlateGrey;
+    margin-right: 15px;
+}
+
+
+/*只有段落框的右侧将具有15像素的边距*/
+
+
+/*可以看到元素特定侧面的边距值*/
+
+
+/*不相同边距*/
+
+p {
+    margin: 6px 10px 5px 12px;
+}
+
+p {
+    margin: 6px 12px;
+}
+
+auto居中内容 div.headline {
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+/*为了使元素居中，必须为该元素设置宽度*/
+
+
+/*否则，div的宽度将自动设置为其包含元素的全宽<body>*/
+
+
+/*div的宽度设置为400像素，小于大多数屏幕的宽度*/
+
+
+/*将导致div位于大于400像素宽的包含元素中*/
+
+边距折叠 #img-one {
+    margin-right: 20px;
+}
+
+#img-two {
+    margin-left: 20px;
+}
+
+
+/*之间的空间#img-one和#img-two边界是40个像素*/
+
+
+/*与水平边距不同，垂直边距不会增加*/
+
+#img-one {
+    margin-bottom: 30px;  
+}
+
+#img-two {
+    margin-top: 20px;
+}
+
+
+/*之间的垂直余量#img-one和#img-two元素是30个像素*/
+
+
+/*虽然边距的总和是50像素，但是边距收缩*/
+
+
+/*所以间距只取决于#img-one底边*/
+
+5.最小和最大高度和宽度
+/*因为可以通过不同屏幕尺寸的显示来查看网页，*/
+
+
+/*网页上的内容可能会受到这些尺寸的变化的影响*/
+
+
+/*可以限制元素的大小可以缩小到多窄。*/
+
+
+/*min-width - 此属性确保元素的最小宽度。*/
+
+
+/*max-width - 此属性确保元素的最大宽度。*/
+
+p {
+    min-width: 300px;
+    max-width: 600px;
+}
+
+
+/*所有段落的宽度不会缩小到300像素以下，*/
+
+
+/*宽度也不会超过600像素。*/
+
+
+/*当浏览器窗口缩小或扩展时，内容（如文本）可能变得难以阅读。*/
+
+
+/*这两个属性通过限制元素的最小和最大宽度来确保内容清晰。*/
+
+p {
+    min-height: 150px;
+    max-height: 300px;
+}
+
+
+/*所有段落的高度不会缩小到150像素以下，*/
+
+
+/*高度不会超过300像素。*/
+
+6.溢出--overflow
+/*有时，这些组件会导致大于父项的包含区域的元素。*/
+
+
+/*如何确保我们可以查看大于其父项的包含区域的所有元素？*/
+
+hidden - 任何溢出的内容将被隐藏。 scroll - 滚动条将添加到元素的框中，通过滚动查看其余内容。 visible -（显示）溢出内容将显示在包含元素的外部。这是默认值。 p {
+    overflow: scroll;
+}
+
+7.重置默认值
+/*所有主要的Web浏览器都有一个默认样式表--用户代理样式*/
+
+
+/*用户代理样式表通常具有设置填充和边距默认值的默认CSS规则。*/
+
+
+/*这会影响浏览器如何显示HTML元素，*/
+
+
+/*这可能使开发人员难以设计或设计网页。*/
+
+
+/*许多开发人员选择重置这些默认值，*/
+
+
+/*以便它们可以真正地与干净的模板配合使用。*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+重置所有HTML元素的默认边距和填充值。 它通常是外部样式表中的第一个CSS规则。 body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*重置bady的边框和填充部分*/
+
+8.能见度--visibility hidden - 隐藏一个元素 visible - 显示一个元素。 HTML： <ul><li>Explore</li><li>Connect</li><li class="future">Donate</li><ul>CSS： .future {
+    visibility: hidden;
+}
+
+
+/*列表项future将在浏览器中被隐藏。*/
+
+
+/*网页只会隐藏元素的内容。它仍然会留下空白的空间*/
+
+
+/*区别display: none  、visibility: hidden：*/
+
+
+/*display: none将被完全从网页上删除*/
+
+
+/*visibility: hidden一个元素在网页上将不会显示但保留给它的空间*/
+
+HTML: <li class="donate">DONATE</li>CSS: .donate {
+    visibility: hidden;
+}
+
+
+/*总结:*/
+
+
+/*填充是内容区域和边框之间的空间。它可以以像素或百分比设置。*/
+
+
+/*边距是元素边界之外的间距量。*/
+
+
+/*水平边距相加，因此相邻元素边界之间的总空间等于一个元素的右边距与相邻元素的左边距之和。*/
+
+
+/*垂直边缘崩溃，因此垂直相邻元素之间的空间等于较大的边距。*/
+
+
+/*margin: 0 auto 如果它的宽度是水平居中的，它的父内容区域内部的元素。*/
+
+
+/*该overflow属性可以被设置为display，，hide或scroll，并且指示HTML将如何呈现溢出其父内容区域的内容。*/
+
+
+/*该visibility属性可以隐藏或显示元素。*/
+
+9.改变盒子模型 h1 {
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+}
+
+
+/*标题元素的框具有实心，黑色，1像素厚的边框。*/
+
+
+/*盒子的高度是200像素，而盒子的宽度是300像素。*/
+
+
+/*在盒子内容的四面都设置了10像素的填充。*/
+
+
+/*不幸的是，在当前的框模型下，边框厚度和填充将影响框的尺寸。*/
+
+
+/*10像素的填充将盒子的高度增加到220像素的宽度到320像素。*/
+
+
+/*接下来，1像素厚边框将高度增加到221像素，宽度增加到321像素。*/
+
+
+/*在此框模型下，边框厚度和填充将添加到框的整体尺寸。*/
+
+
+/*这使得难以准确地确定盒子尺寸。随着时间的推移，*/
+
+
+/*这也可能使网页的所有内容难以定位和管理。*/
+
+箱型：内容盒 解决： box-sizing属性--
+/*控制浏览器在解释网页时应使用的框模型类型。
+默认值为：*/
+
+content-box
+/*这是与边框厚度和填充量相同的盒子模型。*/
+
+不可取!!! 2.箱型：边框 border-box
+/*--重置整个框模型并指定一个新的模型*/
+
+* {
+    box-sizing: border-box;
+    /*border边框*/
+}
+
+
+/*将框模型重置所有HTML元素*/
+
+
+/*避免了你学到的前一个盒子模型中存在的尺寸问题*/
+
+
+/*框的高度和宽度将保持固定。*/
+
+
+/*边框厚度和填充将包含在盒子的内部，*/
+
+
+/*这意味着盒子的整体尺寸不会改变。*/
+
+<h1>Hello World</h1>CSS: * {
+    box-sizing: border-box;
+}
+
+h1 {
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+}
+
+
+/*盒子的高度将保持在200像素，宽度将保持在300像素*/
+
+总结： 把内容盒子改成边框盒子--始终保持框不变 box-sizing：content-box（默认)-->box-sizing: border-box;
+10.CSS还可以改变浏览器放置元素的属性
+/*除了HTML元素提供的属性之外，*/
+
+
+/*CSS还可以改变浏览器放置元素的属性*/
+
+五个属性来调整浏览器中HTML元素的位置： 1.position--位置 2.display--显示 3.z-index--z指数 4.float--漂浮 5.clear--明确的 1.position--位置
+/*position属性--可以采用以下四个值之一*/
+
+static（静止的） - 默认值（不需要指定） relative（相对的） absolute（绝对的） fixed （固定的） · relative（相对）--
+/*允许将元素相对于网页上的默认静态位置定位。*/
+
+
+/*可以移动网页上的元素*/
+
+
+/*如果元素的位置未设置为偏移属性（relative）将不起作用*/
+
+.box-bottom {
+    background-color: DeepSkyBlue;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+有效的偏移属性是： top - 将元素向下移动。 bottom - 移动元素。 left - 移动元素正确。 right - 移动元素。 如： position: relative;
+top: 20px;
+left: 50px;
+
+/*从默认的静态位置向下移动20像素，向右移动50像素*/
+
+· absolute（绝对）--
+/*忽略其他元素，脱离出整体，单独形成一个单体*/
+
+
+/*脱离出来的单体，可以移动位置*/
+
+.box-bottom {
+    background-color: DeepSkyBlue;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+
+/*形成单体的元素，向上移动20px,向左移动50px*/
+
+· fixed(固定)--
+/*当用户滚动时,位置始终保持不变
+通常用于网页上的导航栏*/
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.welcome {
+    width: 100%;
+    position: relative;
+    top: 200px;
+}
+
+
+/*欢迎”部分的一部分现在被标题覆盖。*/
+
+
+/*这是因为当我们position将标题更改为fixed，*/
+
+
+/*我们将其从html文档的流程中删除*/
+
+
+/*可以用relative（相对）解决*/
+
+Z-指数--is layer(tucen)
+/* 网页上的框,彼此重叠,内容难以阅读 */
+
+
+/* 指示浏览器按照元素在网页上显示的顺序 */
+
+.box-top {
+    background-color: Aquamarine;
+    position: relative;
+    z-index: 2;
+}
+
+.box-bottom {
+    background-color: DeepSkyBlue;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 1;
+}
+
+
+/* .box-top元素in front，
+因为它大于.box-bottomz-index 1 */

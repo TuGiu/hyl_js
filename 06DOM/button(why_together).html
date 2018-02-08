@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <button onclick = "displayDate()">display now times</button>
+        <!--向 button 元素分配 onclick 事件
+            (displayDate) 显示日期函数 将在按钮被点击时执行-->
+
+        <script>
+        function displayDate()
+        {
+            document.getElementById("time").innerHTML = Date();
+        }
+        </script>
+        
+        <h1 id = "time"><h1>
+    </head>
+    <body>
+       
+
+        <button id = "anther">click me</button>
+
+        <script>
+        document.getElementById("anther").onclick = function()
+        {displayDate()};
+        //名为 displayDate 的函数被分配给 id=anther" 的 HTML 元素
+
+        function displayDate()
+        {
+            document.getElementById("anther_time").innerHTML = Date();
+        }
+        </script>
+
+        <p id = "anther_time"></p>
+
+
+    </body>
+</html>

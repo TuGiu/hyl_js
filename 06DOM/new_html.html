@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>New page</title>
+    </head>
+    <body>
+
+        <div id = "must_new">
+            <p id = "p1">end write is change</p>
+            <p id = "p2">Hello getElementsByTagName</p>
+        </div>
+
+        <script>
+        //创建新的 HTML 元素
+        var x = document.createElement("p");  //creat创造--添加新元素
+        var y = document.createTextNode("This is new page") //创建文本节点
+        
+        x.appendChild(y);  //把文本节点放到创建的新标签
+
+        var z = document.getElementById("must_new"); //索引父标签
+        z.appendChild(x);  //把要添加的新建标签放到父标签的下面
+
+
+        
+        
+        var a = document.createElement("p");  //创造新标签 a
+        var b = document.createTextNode("Sorry, insert here"); ////创建文本节点 b
+        a.appendChild(b); //把文本节点 b 放到创建的新标签 a
+
+        var c = document.getElementById("must_new"); //索引父标签
+        var d = document.getElementById("p1"); //索引要改变的<p> 的id-p1
+        
+        c.insertBefore(a, d); // insert Befor 插入...前面
+        //在父标签中把 新建的标签 a 插入到 索引的d-p1 的前面
+        </script>
+
+        
+        
+        
+        
+        <script>
+        function remove_p()
+        {
+            var father = document.getElementById("must_new");
+            var child = document.getElementById("p1");
+            father.removeChild(child);
+            //删除 HTML 元素，必须清楚该元素的父元素
+
+            
+        }
+        function Dont_father()
+        {
+            //用 parentNode 属性来查找其父元素
+            var child_p = document.getElementById("p2");
+            child_p.parentNode.removeChild(child_p);
+            // child.parentNode == father
+        }
+        </script>
+        
+        <input type="button" onclick = "remove_p()" value = "Delete tow page" />
+        <input type="button" onclick = "Dont_father()" value = "Delete page not father" />
+    </body>
+</html>

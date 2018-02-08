@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>循环遍历对象的属性</p>
+        <button onclick = "for_obj()">click me</button>
+        <p id = "doing"></p>
+
+        <script>
+        function for_obj()
+        {
+            var x;
+            var txt = "";
+            var good = {webname:'google', type:'web', time:'10'};
+
+            for (x in good) //循环遍历对象的属性
+            {
+                txt = txt + ' ' + good[x];  //叠加--old(new) + new
+            }
+
+            document.getElementById("doing").innerHTML = txt;
+        }
+        </script>
+    </body>
+</html>

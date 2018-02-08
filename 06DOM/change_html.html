@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1 onclick = "this.innerHTML = 'You must change the world!'">Do you want change?</h1>
+        <!--js 能够直接插入到html的标签中，增加动态效果
+            onclick=""
+            当用户在 <h1> 元素上点击时，会改变其内容-->
+
+        
+        
+        <p onclick = "changetxt(this)">change againt</p>
+
+        <script>
+        function changetxt(id)
+        {
+            id.innerHTML = "You are spiderman!"
+            //从事件处理器调用一个函数
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        function good(webname, type, time)
+        {
+            this.webname = webname;
+            this.type = type
+            this.time = time;
+
+            //把方法添加到-对象
+            this.changetype = changetype
+            function changetype(towtype)
+            {
+                this.type = towtype;//changetype() 函数 towtype 的值赋给 good 的 type 属性
+                
+            }
+        }
+        
+        google = new good("chrome", "web", 10);
+
+        google.changetype("spider");
+
+        document.write(google.type);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+        function action_time()
+        {
+            var today = new Date()
+            var h = today.getHours()
+            var m = today.getMinutes()
+            var s = today.getSeconds()
+
+            m = checkTime(m) // check time 超记时间
+            s = checkTime(s)
+            
+            document.getElementById("txt").innerHTML = h + ":" + m + ":" + s
+            t = setTimeout('action_time()', 500)
+        }
+
+        function checkTime(i) 
+        {
+            if (i<10)
+            {i = "0" + i}
+            return i
+        }
+        </script>
+    </head>
+
+    <body onload = "action_time()">
+        <div id = "txt"></div>
+    </body>
+</html>

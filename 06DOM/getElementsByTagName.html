@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+
+        <div id = "max">
+        <p>Helle hyl, Welcome to the internet world!</p>
+        <p>DOM is very good,It is change the html</p>
+        <p>This is <b>getElementsByTageName</b> text</p>
+        </div>
+
+        <script>
+        x = document.getElementsByTagName("p");
+        document.write(x.innerHTML);
+        document.write("The first page text is :" + x[0].innerHTML + "<br />");
+        //getElementsByTagName() 返回带有指定标签名的所有元素
+
+        y = document.getElementById("max").getElementsByTagName("p");
+        document.write("The div first page text is: " + y[1].innerHTML + "<br />");
+        // 有 div 先用getElementById("")索引父标签 再用Tag 来选择里面的子元素
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        
+        <div id = "good">
+            <p id = "p1">How do you do.</p>
+            <p id = "p2">dajiang How much? It is fun</p>
+        </div>
+
+        <script>
+        var father = document.getElementById("good");  //索引父标签
+        var child = document.getElementById("p1");   //索引元素标签
+        var x = document.createElement("p");    // 新建 p 元素标签
+        var y = document.createTextNode("Dji it is good and new life")
+        // 新建文本节点内容
+
+        x.appendChild(y); // 文本节点内容添加到 p 标签
+
+        father.replaceChild(x, child); // replace 替换
+        // 新建的文本标签 替换 索引到的p元素id--p1
+
+        </script>
+    </body>
+</html>

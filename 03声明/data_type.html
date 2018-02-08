@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        var x             //x 为 undefined
+        var x = 6;        //x 为数字
+        var x = 'bill';   //x 为字符串
+        //JavaScript 拥有动态类型-这意味着相同的变量可用作不同的类型
+
+        var x1 = 34.00;  //使用小数点来写
+        var x2 = 34;     //不使用小数点来写
+        //JavaScript 只有一种数字类型,两种是一样的
+
+        var y = 123e5;   //后面加5个零--12300000
+        var z = 123e-5;  //小数点往前移5个--0.00123
+        //极大或极小的数字可以通过科学（指数）计数法来书写
+
+        var a = true
+        var b = false
+
+        document.write(y + "<br>")
+        document.write(z + "<br>")
+
+        var i;
+        var cat = new Array();
+        cat[0] = 'mini';
+        cat[1] = 'green';
+        cat[2] = 'bug';
+
+        // or   var cat = new Array('mini', 'green', 'bug');
+        // or   var cat = ['mini', ' green', 'bug']; 
+
+        for (i = 0; i < cat.length; i++)
+        {
+            document.write(cat[i] + '<br>');
+        }
+
+        
+        var person = {
+            dog : "wang",
+            cat : "miao",
+            id  : '666'
+        };
+        // or  var person = {dog:'wang', cat:'miao', id:'666'};  
+        //键-值， 对象属性有两种寻址方式
+        document.write(person.cat + '<br /');
+        document.write(person['cat'] + '<br />');
+
+
+        var hello;
+        var job = 'good job';
+
+        document.write(hello + '<br / >');
+        document.write(job + '<br />');
+
+        var job = null
+        document.write(job + '<br />');
+        var abc = {
+          aaa: 'apple',
+          bbb: 'banana',
+          ccc: 'cat',  
+        };
+        var abc = null
+        document.write(abc + '<br /');
+        //通过将变量的值设置为 null 来清空变量
+
+        var job = new String;  // string 字符串
+        var x1 =  new Number;
+        var a =   new Boolean;  //boolean 布尔
+        var cat = new Array;   //Array 阵列
+        var person = new Object; //Object 对象 （键-值）
+        //声明新变量时，可以使用关键词 "new" 来声明其类型
+        //声明一个变量时，就创建了一个新的对象
+
+        </script>
+    </body>
+</html>

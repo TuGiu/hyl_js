@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id = 'hello'>Do you install pip?</p>
+
+        <button type = 'button' onclick = 'yes()'>click me</button>
+
+        <script>
+        function yes()
+        {
+            document.getElementById('hello').innerHTML = "Yes! what do you want?"
+        }
+        </script>
+    </body>
+</html>
+
+<!---把 JavaScript 放到了页面代码的底部，这样就可以确保在 <p> 元素创建之后再执行脚本。--->

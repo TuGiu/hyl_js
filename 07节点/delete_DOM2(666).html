@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <div id = "div1">
+        <p id = "p1">This is a page</p>
+        <p id = "p2">This is anther page</p>
+    </div>
+
+    <script>
+    var child
+    child = document.getElementById('p1');
+
+    child.parentNode.removeChild(child);
+    //可以直接找到它的父标签，省去查找的步骤
+
+    </script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <div id = "div1">
+        <p id = "p1">This is a page</p>
+        <p id = "p2">This is anther page</p>
+    </div>
+
+    <script>
+    var Font
+    Font = document.getElementById("div1");
+    //如需删除 HTML 元素，须先获得该元素的父元素
+    var child
+    child = document.getElementById('p1');
+    //找到父标签下的子标签--删除的对象
+    Font.removeChild(child);
+    // child.parentNode.removeChild(child);
+    //从父元素中删除子元素
+    //DOM 需要清楚您需要删除的元素，以及它的父元素:
+    //常用的解决方案:使用其 parentNode(父节点) 属性来找到父元素
+    </script>
+</html>

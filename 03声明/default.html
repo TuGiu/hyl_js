@@ -1,0 +1,29 @@
+<html>
+    <button onclick  = "week()">click me</button>
+    
+    <p id = "day"></p>
+
+    <script>
+    function week()
+    {
+        var x;
+        var d = new Date().getDay();
+        switch (d)
+        {
+            case 6: 
+            x = "Today it's Saturday";
+            break;
+
+            case 0: 
+            x = "Today it's Sunday";
+            break;
+
+            default:  //未履行
+            x = "Looking forward to the Weekend";
+            //使用 default 关键词来规定匹配不存在时做的事情
+        }
+        document.getElementById('day').innerHTML = x;
+    }
+    </script>
+
+</html>

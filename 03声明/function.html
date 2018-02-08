@@ -1,0 +1,29 @@
+<!-- 函数被调用时执行的可重复使用的代码块
+    function 定义函数  （功能）-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function name()  //定义函数 name   （def）
+        {
+            alert('what is your name?');
+        }
+
+        function good(age, job)  //设置传递值--参数
+        {
+            alert('Welcome ' + age + ', the ' + job);
+            return age;
+        }
+
+        </script>
+    </head>
+    <body>
+        <button onclick = 'name()'>click me</button>
+
+        <button onclick = 'good(14, "heacker")'>Not click me</button>
+        <button onclick = 'good(25, "CEO")'>try click again</button> <!--不同参数调用同一个函数-->
+        <!-- 使用时，调用函，赋值
+        变量和参数必须以一致的顺序出现-->
+        
+    </body>
+</html>

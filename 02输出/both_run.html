@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id = 'doing'>I am code</p>
+        <div id = 'you'>I am goodboy</div>
+        
+        <p>
+            <button type = "button" onclick = "ooo()">点我点我，爱你哦</button>
+        </p>
+
+        <script>
+        function ooo()
+        {
+            //改变
+            //document.getElementById('doing').innerHTML = 'SO? you code is fun';
+            //回答
+            document.getElementById('you').innerHTML = 'Not,You are bad gril';
+            /*下面的这些代码
+            注释块不会被执行*/
+        }
+        </script>
+        <!--浏览器会按照编写顺序来执行每条语句
+            代码块.块由左花括号开始，由右花括号结束。
+            块的作用是使语句序列一起执行。-->
+    </body>
+</html>
+
+
+<!--在 文本 字符串中使用反斜杠对代码行进行换行
+    document.write("Hello \
+    World");
+
+    不能像这样折行：
+    document.write \
+    ('Hello World!');
+
+    JavaScript 是脚本语言。浏览器会在读取代码时，逐行地执行脚本代码。
+    而对于传统编程来说，会在执行前对所有代码进行编译。-->
+
+<!--注释用于阻止代码块的执行（可用于调试）：
+    /*
+    document.getElementById("myH1").innerHTML="Welcome to my Homepage";
+    document.getElementById("myP").innerHTML="This is my first paragraph.";
+    */
+-->
+
+
+    
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div onmousedown = "down_c(this)" onmouseup = "up_c(this)"
+        style = "background-color:burlywood; color:#ffffff; width:100px; height:30px; padding:40px; font-size:12px;"
+        >Can you try-try~</div>
+        <!--onmousedown, onmouseup 以及 onclick 构成了鼠标点击事件的所有部分-->
+
+        <script>
+        function down_c(obj)
+        {
+            obj.style.backgroundColor = "#1ec5e5";
+            obj.style.innerHTML = "It is magic?"
+        }
+        function up_c(obj)
+        {
+            obj.style.backgroundColor = "burlywood";
+            obj.innerHTML = "Can you try-try~"
+        }
+        </script>
+    </body>
+</html>

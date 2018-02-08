@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div id = "div1">
+            <p id = 'p1'>This is first text</p>
+            <p id = 'p1'>This is tows text</p>
+        </div>
+
+        <script>
+        var Build
+        Build = document.createElement('p');  //创建新的 <p> 元素
+        // create Element 创建元件
+        var new_txt
+        new_txt = document.createTextNode('This is new page');
+        // create Text Node 创建文本节点
+        //向 <p> 元素添加文本，须先创建文本节点
+        Build.appendChild(new_txt);
+        //向 <p> 元素追加这个文本节点
+
+        var Total
+        Total = document.getElementById("div1");
+        //须向一个已有的元素追加这个新元素
+        Total.appendChild(Build);
+        //向这个已有的元素追加新元素
+        
+        //如需向 HTML DOM 添加新元素
+        //必须先创建该元素（元素节点）
+        //然后向一个已存在的元素追加该元素
+        </script>
+    </body>
+</html>

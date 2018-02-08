@@ -1,0 +1,46 @@
+<!--表单验证
+    用户是否已填写表单中的必填项目？
+
+    用户输入的邮件地址是否合法？
+    
+    用户是否已输入合法的日期？
+    
+    用户是否在数据域 (numeric field) 中输入了文本？-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function yesOn(field,alerttxt)
+        {
+            with (field)
+            {
+            if (value == null||value=="")
+                {alert(alerttxt);return false}
+            else {return true}
+            }
+        }
+
+        function emailmust(thisform)
+        {
+            with (thisform)
+            {
+                if (yesOn(email, 'Email must be filled out!') == false)
+                {email.focus();return false}  // focus 集中
+            }
+        }
+        
+        </script>
+    </head>
+    
+    <body>
+        
+        <from action = "submitpage.htm" onsubmit = "return emailmust(thisform)" method = "post">
+        <!-- action 功能，作用 ;  onsubmit 事件;  method 方法;-->
+        Email: <input type = "text" name = "email" size = "30">
+        <input type = "submit" value = "Submit">
+        <!-- submit 提交-->
+        </from>
+
+    </body>
+</html>

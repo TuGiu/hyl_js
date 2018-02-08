@@ -1,0 +1,58 @@
+<!--    
+        假设 y = 5
+        %	求余数 (保留整数)	x=y%2	x=1   5%2余1
+        ++	累加	            x=++y	x=6   x+1
+        --	递减	            x=--y	x=4   x-1
+
+        假设 x = 10, y = 5
+       +=	    x+=y	x=x+y	x=15
+                x+=1    x=x+1   x=11
+
+       -=	    x-=y	x=x-y	x=5
+                x-=1    x=x-1   x=9
+
+       *=	    x*=y	x=x*y	x=50
+       /=	    x/=y	x=x/y	x=2
+       %=	    x%=y	x=x%y	x=0   10%5余0   
+    
+    
+        假设 x = 5
+        ==	  等于	          x==8 为 false
+        ===	  全等（值和类型）	 x===5 为 true；x==="5" 为 false
+        
+        if (age<18) document.write('Too young');
+
+        假设 x = 6， y = 3
+        &&	 and	(x < 10 && y > 1) 为 true
+        ||	  or	(x==5 || y==5) 为 false
+        !	 not	!(x==y) 为 true
+
+        name = (good)?value1:value2
+
+        car = (color=='red')?"red_car":"other_car";
+        如果变量 color 中的值是 'red'
+        则变量 car 赋值 'red_car', 否则赋值 'other_car'
+        -->
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <script>
+        x = 5 + 5
+        document.write(x, '<br />');
+
+        x = '5' + '5';
+        document.write(x, '<br />');
+
+        x = '5' + 5;
+        document.write(x, '<br />');
+
+        x = 5 + '5';
+        document.write(x, '<br /');
+        // 数字与字符串相加，结果将成为字符串
+
+        </script>
+    </body>
+</html>

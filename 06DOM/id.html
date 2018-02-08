@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id = "fond">good job!</p>
+        <p>getElementById方法</p>
+
+        <div id = "mast">
+        <p>The function is very good</p>
+        <p>first name who are you?</p>
+        <p><b>getElementsByTagName方法</b></p>
+        </div>
+
+        <script>
+        //通过 id 查找 HTML 元素
+        x = document.getElementById("fond");
+        //在 DOM 中查找 HTML 元素的最简单的方法，是通过使用元素的 id
+        document.write('<p>id = "fond" 文本是： ' + x.innerHTML + '</p>');
+
+
+        //通过标签名查找 HTML 元素
+        var x = document.getElementById("mast");  //查找 id="main" 的元素
+        var y = getElementByIdTagName('p');    //然后查找 "main" 中的所有 <p> 元素
+        document.write(y[0].innerHTML);
+
+        </script>
+    </body>
+</html>

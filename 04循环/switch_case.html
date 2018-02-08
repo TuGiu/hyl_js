@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Look this is today</p>
+
+        <button onclick = "week()">click me</button>
+
+        <p id = "today"></p>
+
+        <script>
+        function week()
+        {
+            var d = new Date().getDay();
+            //switch 转换
+            switch (d)
+            {
+                case 0:
+                x = "Today it's Sunday";
+                break;
+                
+                case 1:
+                x = "Today it's Monday";
+                break;
+
+                case 2:
+                x = "Today it's Tuesday";
+                break;
+
+                case 3: 
+                x = "Today it's Wednesday";
+                break;
+
+                case 4: 
+                x = "Today it's Thursday";
+                break;
+
+                case 5: 
+                x = "Today it's Friday";
+                break;
+
+                case 6: 
+                x = "Today it's Saturday";
+                break;
+
+                //首先设置表达式 n（通常是一个变量）
+                //表达式的值会与结构中的每个 case 的值做比较
+                //如果匹配，则与该 case 关联的代码块会被执行
+                // break 来阻止代码自动地向下一个 case 运行
+
+            }
+
+            document.getElementById('today').innerHTML = x;
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        var txt = "";
+        function message()
+        {
+            //try测试代码块的错误
+            //catch 语句处理错误,成对出现
+            try
+            {
+                addlert('Welcom guest!');
+            }
+            catch(err)
+            {
+                txt = "本页有一个错误。\n\n";
+                txt += "错误描述：" + err.message + "\n\n";
+                txt += "点击确定继续。\n\n";
+                alert(txt);  
+            }
+        }
+        </script>
+    </head>
+
+    <body>
+        <input type = "button" value = "test me" onclick = "message()" />
+    </body>
+</html>

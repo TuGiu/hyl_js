@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body onload = "checkCookies()">
+    <!--能够在body标签中改变条件
+        onload 加载； onunload 卸载；
+        可用于检测浏览器的类型和浏览器版本，并基于这些信息来加载网页的正确版本
+        onload 和 onunload 事件可用于处理 cookie-->
+
+        <script>
+        function checkCookies()
+        //check Cookies 检查Cookie
+        {
+            if (navigator.cookieEnabled == true)
+            //navigator 浏览器的品牌
+            //cookie Enabled  --Cookie的启用;
+            {
+                alert('cookie 的智商是在线的哦')
+            }
+            else
+            {
+                alert('cookie 不知道跑到哪里去了')
+            }
+        }
+        </script>
+
+        <p>提示框会告诉你，浏览器是否已启用 cookie。</p>
+    </body>
+</html>

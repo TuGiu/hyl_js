@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aarray_set</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+
+<body>
+
+    <script type = "text/javascript">
+    var inclued = new Array()
+    //创建数组，为其赋值，然后输出这些值
+    inclued[0] = "baidu"
+    inclued[1] = "google"
+    inclued[2] = "fixfog"
+    
+    inclued[2] = "alibaba";
+    document.write(inclued[2] + "<br />");
+    //修改已有数组中的值，只要向指定下标号添加一个新值即可
+    
+    for (i=0; i<inclued.length; i++)
+    {
+        document.write(inclued[i] + "<br />")
+    }
+
+    
+
+    
+
+    var x
+    var compy = new Array()
+    compy[0] = "You "
+    compy[1] = "Are "
+    compy[2] = "good" 
+    compy[3] = "job"
+
+    for (x in compy)
+    //for...in 声明来循环输出数组中的元素
+    {
+        document.write(compy[x] + " ")
+    }
+
+    var arr = new Array(3)
+    arr[0] = "google"
+    arr[1] = "baidu"
+    arr[2] = "chrome"
+
+    var arr2 = new Array(3)
+    arr2[0] = "facebook"
+    arr2[1] = "amasouy"
+    arr2[2] = "albaba"
+    //var arr2=new Array("facebook", "amasouy", "albaba")
+    //需要在数组内指定数值或者逻辑值，那么变量类型应该是数值变量或者布尔变量，而不是字符变量
+
+    document.write("</br>" + arr.concat(arr2))
+    // 使用 concat() 方法来合并两个数组
+
+
+
+
+
+
+    var string = new Array(4);
+    string[0] = "malio"
+    string[1] = "is" 
+    string[2] = "love" 
+    string[3] = "marry" 
+
+    document.write("<br />" + string.join());
+    document.write("<br />");
+    document.write(string.join("..") + "<br />");
+    // join() 方法将数组的所有元素组成一个字符串
+
+    var abc = new Array(6)
+    abc[0] = "Google"
+    abc[1] = "Jamus"
+    abc[2] = "Tugiu"
+    abc[3] = "Chrome"
+    abc[4] = "Albaba"
+    abc[5] = "Mazoom"
+
+    document.write(abc + "<br />")
+
+    document.write(abc.sort() + "<br />")
+    //sort() (分类)方法从字面上对数组进行--排序
+
+
+
+    function unadd(a, b)
+    {
+        return a - b
+    }
+
+    var number = new Array(6)
+    number[0] = "10"
+    number[1] = "5"
+    number[2] = "40"
+    number[3] = "25"
+    number[4] = "1000" 
+    number[5] = "1" 
+
+    document.write(number + "<br />")
+
+    document.write(number.sort() + "<br />")
+    //按数字排序，不是按数字的大小排序
+
+    document.write(number.sort(unadd))
+
+    </script>
+</body>
+</html>

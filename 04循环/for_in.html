@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>for_in 遍历--对象的属性</p>
+        <button onclick = "doing()">click me</button>
+        <p id = "add_all"></p>
+
+        <script>
+        function doing()
+        {
+            var x;
+            var txt = ""
+            var person = {name:"jarry", sex:"boy", age:15};
+
+            for (x in person)
+            {
+                txt = txt + person[x]; //叠加效果 0+1=1 1+2=3 、、、
+            }
+
+            document.getElementById("add_all").innerHTML = txt;
+        }
+        </script>
+    </body>
+</html>

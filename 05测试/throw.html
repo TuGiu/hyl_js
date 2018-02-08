@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>请输入 5 到 10 之间的数字：</p>
+        <input id = "anything" type = "text">
+        <button type = "button" onclick = "doing()">test input</button>
+        <p id = "error"></p>
+
+        <script>
+        function doing()
+        {
+            try
+            {
+                var x = document.getElementById('anything').value;
+                //throw 抛出(异常)--创建自定义错误消息
+                if (x == "")        throw "值为空";
+                if (isNaN(x))       throw "不是数字";  //判断一个值是否为非数字类型
+                if (x > 10)         throw "太大";
+                if (x < 5)          throw "太小";  
+            }
+            catch (err)  
+            {
+                var y = document.getElementById('error');
+                y.innerHTML = "错误：" + err + "。";  //err--链接到try中的 throw
+
+            }
+        }
+        </script>
+    </body>
+</html>

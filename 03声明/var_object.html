@@ -1,0 +1,66 @@
+<!--Object = 字符串、数字、数组、日期，等等
+    对象 = 属性 and 方法
+    例子： 汽车car = object
+    
+    car 的属性：
+    car.name = baoma
+    car.model = 500
+    car.weight = 850kg
+    car.color = break
+    汽车的属性包括名称、型号、重量、颜色等
+    所有汽车都有这些属性，但是每款车的属性都不尽相同
+
+    car 的方法：
+    car.start()
+    car.drive()
+    car.brake() 
+    汽车的方法可以是启动、驾驶、刹车等
+    所有汽车都拥有这些方法，但是它们被执行的时间都不尽相同
+
+    
+    声明一个 JavaScript 变量时,已经创建了一个 JavaScript 字符串对象
+    字符串对象内建的属性 length = 5
+    
+    var txt = 'Hello';
+    属性：
+    txt.length = 5   #属性 有 = 什么值
+    方法:
+    txt.indexOf()  指数  #对象是调用什么方法 .Name()
+
+    txt.replace()  代替
+
+    txt.search()   搜索-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <script>
+        //为 "person" 的对象，并为其添加了四个属性
+        person = new Object();
+        person.name = 'hyl';
+        person.age = '23';
+        person.hear = 'break';
+
+        document.write(person.name + ' is ' + person.age + ' years old ');
+
+        </script>
+    </body>
+</html>
+
+<!--访问对象的属性
+    var html = 'Hello my friend';
+    var x = html.length;
+    // x 的值是: 13
+    //属性--先赋值，调用时没有（）
+
+    
+    访问对象的方法
+    var good = 'good job';
+    var x = good.toUpperCase();  //toUpperCase() 全部大写
+    //调用方法时加 name() 有括号 
+    //x 的值是： GOOD JOB
+    //使用 String 对象的 toUpperCase() 方法来把文本转换为大写-->
+    
+    
+

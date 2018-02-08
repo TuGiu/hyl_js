@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div onmouseover = "on(this)" onmouseout = "out(this)"
+        style = "background-color:green; width:120px; height:20px; padding:40px; color:#ffffff;"
+        >move on this</div>
+        <!-- on mouse over 在鼠标悬停
+             on mouse out  鼠标移出时-->
+
+
+        <script>
+        function on(obj)
+        {
+            obj.innerHTML = "Suprise! I love you!"
+        }
+
+        function out(obj)
+        {
+            obj.innerHTML = "look me! again"
+        }
+
+
+        </script>
+    </body>
+</html>

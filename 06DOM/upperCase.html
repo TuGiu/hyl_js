@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function change_English()
+        {
+            var x = document.getElementById('case');
+            x.value = x.value.toUpperCase();
+            //UpperCase 大写字母
+        }
+        </script>
+    </head>
+
+    <body>
+        Please input English: <input type = "text" id = "case"
+        onchange = "change_English()">
+        <!--onchange 事件常结合对输入字段的验证来使用
+            当用户改变输入字段的内容时，会调用 upperCase() 函数-->
+    </body>
+</html>

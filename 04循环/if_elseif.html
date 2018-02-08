@@ -1,0 +1,43 @@
+<!--if (条件 1)
+  {
+  当条件 1 为 true 时执行的代码
+  }
+else if (条件 2)
+  {
+  当条件 2 为 true 时执行的代码
+  }
+else
+  {
+  当条件 1 和 条件 2 都不为 true 时执行的代码
+  }
+-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick = 'doing()'>click me</button>
+
+        <p id = 'good'></p>
+
+        <script>
+        function doing()
+        {
+            var x = ""
+            var time = new Date().getHours();
+            if (time<10)
+            {
+                x = "Good moring";
+            }
+            else if (time<20)
+            {
+                x = "Good afternoon";
+            }
+            else
+            {
+                x = "Good night";
+            }
+
+            document.getElementById('good').innerHTML = x;
+        }
+        </script>
+    </body>
+</html>

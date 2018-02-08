@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id = 'ppt'></p>
+
+        <script>
+        function hill(a,b)
+        {
+            return (a+b)*a;
+            //在使用 return 语句时，函数会停止执行，并返回指定的值
+        }
+
+
+        //即使不把它保存为变量，您也可以使用返回值
+        document.getElementById('ppt').innerHTML = hill(2,3);
+        //函数调用将被返回值取代
+
+        //仅仅希望退出函数时 ，也可使用 return 语句
+        function bad(c,d)
+        {
+            if (c>d)
+            {
+                return;
+            }
+            x = c + d
+            //如果c大于d，则上面的代码将退出函数，并不会计算c和d的总和
+        }
+
+        
+
+        
+        function all()
+        {
+            var fox = 1  //var是局部变量,只能在函数内部(all)中访问它 
+        }
+        function bll()
+        {
+            var fox = 3 //不同的函数中可以使用名称相同的局部变量（fox）
+            return fox  //只要函数运行完毕，本地变量就会被删除
+        }
+
+        //JavaScript 变量的生存期
+        //局部变量(var)--会在函数运行以后被删除
+        //全局变量会在页面关闭后被删除
+
+
+        </script>
+    </body>
+</html>

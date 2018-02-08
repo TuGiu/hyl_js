@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <script type = "text/javascript">
+        
+        var txt = "Hello World!"
+        document.write(txt.length)
+        //空格和！ 也是包含在字符串中
+
+        document.write("<p>Big: " + txt.big() + "</p>")
+        document.write("<p>Smaill: " + txt.small() + "</p>")
+        
+        
+        document.write("<p>Bold: " + txt.bold() + "</p>")
+        document.write("<p>Italic: " + txt.italics() + "</p>")  // italics 斜体
+        
+        
+        document.write("<p>Blink: " + txt.blink() + " (does not work in IE)</p>")  // blink 闪烁
+        
+        
+        document.write("<p>Fixed: " + txt.fixed() + "</p>") // fixed 固定
+        document.write("<p>Strike: " + txt.strike() + "</p>") // strike 罢工,删除线
+        
+
+        document.write("<p>Fontcolor: " + txt.fontcolor('gary') + "</p>")
+        document.write("<p>Fontsize: " + txt.fontsize(16) + "</p>")
+        
+
+        document.write("<p>Lowercase: " + txt.toLowerCase() + "</p>") // toLowerCase 小写
+        document.write("<p>Uppercase: " + txt.toUpperCase() + "</p>") // toUpperCase 大写
+        
+
+        document.write("<p>Subscript: " + txt.sub() + "</p>") // Subscript--sub() 下标
+        document.write("<p>Superscript: " + txt.sup() + "</p>") // Superscript--sup() 上标
+        
+
+        document.write("<p>Link: " + txt.link("http://www.baidu.com") + "</p>") 
+        // link 链接
+
+        
+
+
+        </script>
+    </body>
+</html>

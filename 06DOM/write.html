@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id = "head">You want what?</h1>
+        
+        <div id = "must">
+            <p>end write is change</p>
+            <p><b>getElementsByTagName</b></p>
+        </div>
+
+        <p id = "n1">Oh! my god!</p>
+
+        <script>
+        var story = document.getElementById('head');
+        story.innerHTML = "You need change youself";
+        //改变了 <h1> 元素的内容
+        
+        var x = document.getElementById("must");
+        var y = getElementsByTagName("p");  //JavaScript 能够创建动态的 HTML 内容--<p>改变位置不变
+        document.write(y[0].innerHTML);
+        //document.write() 可用于直接向 HTML 输出流--写内容
+
+        document.getElementById("n1").innerHTML = "change myself";
+        //innerHTML 属性,改变 HTML 元素的内容
+        //改变了 <p> 元素的内容
+        </script>
+    </body>
+</html>>

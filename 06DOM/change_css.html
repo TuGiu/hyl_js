@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id = "head">change css</h1>
+        <button type = "button"
+        onclick = "document.getElementById('head').style.color = 'green'">click me</button>
+
+        <p id = "p1">My first css</p>
+        <p id = "p2">My first css</p>
+
+        <script>
+        //改变 HTML 样式
+        document.getElementById('p2').style.color = "blue";
+        document.getElementById('p2').style.fontFamily = "Arial";
+        document.getElementById('p2').style.fontSize = "larger";
+        //document.getElementById(id).style.property=new style    # property属性
+        //能够访问 HTML 元素的css样式对象
+        </script>
+
+        <p id = "text">You know you want what? Yes or No?</p>
+
+        <input type = "button" value = "Yes"
+        onclick = "document.getElementById('text').style.visibility = 'hidden'"/>
+        <!-- visibility 能见度;  hidden隐藏-->
+        <input type = "button" value = "No"
+        onclick = "document.getElementById('text').style.visibility = 'visible'" />
+        <!-- visible 看得见的-->
+    </body>
+</html>

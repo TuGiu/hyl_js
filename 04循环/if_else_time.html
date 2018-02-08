@@ -1,0 +1,30 @@
+<!-- if 语句 - 只有当指定条件为 true 时，使用该语句来执行代码-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>如果时间早于 20:00，会获得问候</p>
+
+        <button onclick = "timeNow()">click me</button>
+
+        <p id = 'good'></p>
+
+        <script>
+        function timeNow()
+        {
+            var x = "";
+            var time = new Date().getHours();
+            // Date 日期  getHours获得当前的小时
+
+            if (time < 20)
+                {
+                x = "Good day";
+                }
+            else 
+                {
+                x = "Good night";
+                }
+            document.getElementById('good').innerHTML = x;
+        }
+        </script>
+    </body>
+</html>

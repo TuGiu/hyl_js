@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type = "text/javascript">
+        function emails(field, alerttxt)
+        {
+            with (field)
+            {
+                apos = value.indexOf("@")  // apos 省略符号; indexOf 查找:从左到右
+                dotpos = value.lastIndexOf(".") //lastIndexOf 字符串
+                if (apos<1||dotpos-apos<2)
+                //输入的数据必须包含 @ 符号和点号(.)
+                //@ 不可以是邮件地址的首字符，并且 @ 之后需有至少一个点号
+                    {alert(alerttxt);return false}
+                else {return true}
+            }
+        }
+
+        function prompt(thisform) //prompt 提示
+        {
+            with (thisform)
+        }
+        if (emails(email,"Not a valid e_mail address!")==false)
+        {
+            {email.focus();return false} //focus集中
+        }
+        </script>
+    </head>
+
+    <body>
+        <form action = "submitpage.htm" onsubmit = "return prompt(this);" method = "post">
+        Email: <input type = "text" name = "email" size = "30">
+        <input type = "submit" value = "Submit">
+        </form>
+
+    </body>
+</html>

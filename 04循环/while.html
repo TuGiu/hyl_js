@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>只要指定条件为 true，循环就可以一直执行代码</p>
+        <button onclick = "doing()">click me</button>
+        <button onclick = "only_one()">click me againt</button>
+        <p id = "forever"></p>
+        <p id = "anther"></p>
+
+        <script>
+        function doing()
+        {
+            var x = "", i = 0;
+            while (i<5)
+            {
+                x = x + "The age is " + i + "<br>";
+                i++;
+            }
+            document.getElementById('forever').innerHTML = x;
+            //如果忘记增加条件中所用变量的值，该循环永远不会结束,可能导致浏览器崩溃
+        }
+
+        function only_one()
+        {
+            var x = "", i = 0;
+            do
+            {
+                x = x + "The number is" + i + '<br>';
+                i++;
+            }
+            while (i>5);
+            document.getElementById('anther').innerHTML = x;
+            //用 do/while 循环。该循环至少会执行一次，即使条件是 false
+            //如果条件为真的话，就会重复这个循环
+        }
+        </script>
+    </body>
+</html>
+
+<!--for 和 while
+    for 是在一开始限定条件和次数，遍历所有可能性，确定了一个范围再循环
+    系统在一开始就知道范围
+
+    while 是判定你是否满足条件，一次判定一次输出，一个一个的出来
+    系统不能知道你要输出多少个，因为没有一个范围，只是判定符合的条件-->
